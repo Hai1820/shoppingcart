@@ -40,7 +40,7 @@ public class User implements Serializable {
     @Transient
     @JsonIgnore
     private String confirmPassword;
-
+    private String roleId;
 //user may have one or many role and vice versa
     @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(name = "users_roles",

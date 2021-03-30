@@ -31,6 +31,7 @@ public class UserDto implements UserDetails {
     private String intro;
     private String profile;
     private String confirmPassword;
+    private String roleName;
     private Collection<? extends GrantedAuthority> authorities;
 
     public UserDto(String firstName, String lastName,
